@@ -2,6 +2,8 @@
 
 Repo created to explain [Vuetify](https://vuetifyjs.com/) + [vue-toastification](https://github.com/Maronato/vue-toastification) integration problem.
 
+Follow the question on [Stack Overflow](https://stackoverflow.com/questions/76421695/vuetify-cant-load-default-inside-vue-toastification).
+
 ## Project setup
 
 ```
