@@ -16,10 +16,12 @@ import { registerPlugins } from "@/plugins";
 // Toastification
 import Toast, { POSITION } from "vue-toastification";
 import "vue-toastification/dist/index.css";
+import type { PluginOptions } from "vue-toastification";
 
 const app = createApp(App);
 
-const options = {
+const options: PluginOptions = {
+  container: () => document.getElementById("app")!, // "vuetify-app" or "vuetify-main"
   shareAppContext: true,
   position: POSITION.BOTTOM_CENTER,
 };

@@ -1,14 +1,13 @@
 <template>
-  <v-app>
-    <v-main>
+  <v-app id="vuetify-app">
+    <v-main id="vuetify-main">
       <v-container>
-        <v-row>
-          <v-col>
-            <HelloWorld />
-          </v-col>
-          <v-col>
+        <v-row align="center">
+          <v-spacer></v-spacer>
+          <v-col >
             <v-btn @click="loc">Location Error</v-btn>
           </v-col>
+          <v-spacer></v-spacer>
         </v-row>
       </v-container>
     </v-main>
@@ -16,7 +15,6 @@
 </template>
 
 <script setup lang="ts">
-import HelloWorld from "@/components/HelloWorld.vue";
 import { useErrorStore } from "./store/error";
 
 const errorStore = useErrorStore();
